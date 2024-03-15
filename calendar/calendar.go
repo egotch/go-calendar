@@ -3,6 +3,9 @@
 // Formats the input and saves it to the running csv file
 // Also can print out the contents of the csv file to "display"
 // the calendar
+// TODO - initiate contact list
+// TODO - add some contacts to the contact list & print out the contact list
+// TODO - remove some contacts from contact list & print contacts
 package main
 
 import (

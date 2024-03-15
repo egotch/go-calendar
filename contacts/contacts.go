@@ -1,5 +1,10 @@
 // contact keeping module
 
+//TODO - method to print single contact
+//TODO - method to add contact
+//TODO - method to delete contact (by name)
+//TODO - function to generate/return contact list
+
 package contacts
 
 import "fmt"
@@ -11,11 +16,11 @@ type contact struct {
 }
 
 // printContact prints the contact information for the contact
-func (c contact) PrintContact() {
+func (c *contact) PrintContact() {
 	fmt.Printf("Name: %s\nEmail: %s\nPhone:%s\n\n\n", c.name, c.email, c.phone)
 }
 
-func (c *contact) updateContact(email string, phone string) {
+func (c *contact) UpdateContact(email string, phone string) {
 
 	c.email = email
 	c.phone = phone
